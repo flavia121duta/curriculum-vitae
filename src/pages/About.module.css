@@ -1,0 +1,36 @@
+.first-name {
+  color: #0f4c81;
+}
+
+.btn-download {
+  margin: 1rem;
+}
+
+.btn-download > i {
+  padding: 10px;
+  font-size: 1rem;
+}
+
+.contact {
+  padding: 1rem;
+  box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.social > * {
+  margin: 1rem;
+  font-size: 3rem;
+}
+
+.email {
+  text-decoration: underline;
+}
+
+.hide-option {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hide-option:active {
+    animation: growDown 300ms ease-in-out forwards;
+}

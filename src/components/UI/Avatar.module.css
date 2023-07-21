@@ -1,0 +1,11 @@
+.avatar-img {
+  width: 90%;
+  border-radius: 50%;
+  margin: 3rem;
+  border: .3rem solid white;
+  opacity: .8;
+}
+
+.avatar-img:hover {
+    opacity: 1
+}
