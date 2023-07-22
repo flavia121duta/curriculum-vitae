@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import Avatar from "./UI/Avatar";
 import classes from "./MainNavigation.module.css";
 import profile_image from "../assets/images/profile_picture.jpg";
@@ -6,6 +6,12 @@ import useScreenSize from "./hooks/useScreenSize";
 import { useState } from "react";
 
 export default function MainNavigation() {
+  const navigate = useNavigate();
+
+  function avatarClickHandler() {
+    navigate('/'); // navigate programatically
+  };
+
   const screenSize = useScreenSize(true);
 
   const navigation = (
@@ -78,13 +84,13 @@ export default function MainNavigation() {
         <h1>Duţă Flavia</h1>
         {showMobileMenu && navigation}
       </div>
-      <i class="fa-solid fa-bars" onClick={mobileMenuHandler}></i>
+      <i className="fa-solid fa-bars" onClick={mobileMenuHandler}></i>
     </nav>
   );
 
   return (
     <header className={classes.header}>
-      <Avatar src={profile_image} alt="avatar" className={classes.avatar} />
+      <Avatar src={profile_image} alt="avatar" className={classes.avatar} onClick={avatarClickHandler} />
       {screenSize !== "mobile" ? navigation : hamburgerMenu}
     </header>
   );

@@ -52,11 +52,17 @@
   justify-content: space-between;
   width: 100%;
   color: white;
+  padding: 0.5rem;
 }
 
 .hidden-list {
   display: flex;
   flex-direction: column;
+}
+
+.hidden-list > h1 {
+  margin: 0;
+  margin-bottom: 10px;
 }
 
 .mobile-menu i {

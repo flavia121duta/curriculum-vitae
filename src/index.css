@@ -11,6 +11,7 @@ main.content {
 
 h1.title {
   font-size: 3rem;
+  margin-bottom: 1.5rem;
 }
 
 @media (max-width: 600px) {

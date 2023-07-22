@@ -5,5 +5,6 @@ export default function Avatar(props) {
     src={props.src}
     alt={props.alt}
     className={`${classes["avatar-img"]} ${props.className}`}
+    onClick={props.onClick}
   />
 }

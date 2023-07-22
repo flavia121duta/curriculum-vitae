@@ -37,6 +37,14 @@ export default function AboutPage() {
         augue porttitor molestie.
       </p>
 
+      <ul>
+        <li>Forename: Flavia</li>
+        <li>Surname: Duţă</li>
+        <li>Date of birth: 1 February 2002</li>
+        <li>Place of birth: Oneşti, Romania</li>
+        <li>Nationality: Romanian</li>
+      </ul>
+
       <a href={Resume} download="Duta_Flavia resume">
         <button className={`${classes["btn-download"]}`}>
           <i className="fa-solid fa-download"></i>
@@ -50,7 +58,7 @@ export default function AboutPage() {
           target="_blank"
           rel="noreferrer"
         >
-          <i class="fa-brands fa-linkedin"></i>
+          <i className="fa-brands fa-linkedin"></i>
         </a>
         <a
           href="https://github.com/flavia121duta"
@@ -62,21 +70,24 @@ export default function AboutPage() {
       </div>
 
       <div className={classes.contact}>
-        <div className={`${classes["hide-option"]}`} onClick={hidePannelHandler}>
+        <div
+          className={`${classes["hide-option"]}`}
+          onClick={hidePannelHandler}
+        >
           <p>Contact Me</p>
           <i className={typeOfChevron}></i>
         </div>
         {isHidden && (
           <ul>
-            <li>
-              Address: Strada Minis, nr. 4, bl. X6, ap. 106, Sector 3 Bucuresti
-              032382
-            </li>
             <li>Phone: +40-(0)733519182</li>
             <li>
               Email-s:{" "}
               <span className={classes.email}>flaviaduta302@gmail.com</span>,{" "}
               <span className={classes.email}>flavia.duta@s.unibuc.ro</span>
+            </li>
+            <li>
+              Permanent Address: Strada Minis, nr. 4, bl. X6, ap. 106, Sector 3,
+              Bucuresti 032382
             </li>
           </ul>
         )}

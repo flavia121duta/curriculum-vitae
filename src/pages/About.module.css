@@ -21,6 +21,10 @@
   font-size: 3rem;
 }
 
+.social i {
+  color: #0f4c81;
+}
+
 .email {
   text-decoration: underline;
 }
