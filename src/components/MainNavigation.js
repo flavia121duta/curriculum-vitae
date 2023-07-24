@@ -1,7 +1,7 @@
 import { NavLink, useNavigate } from "react-router-dom";
 import Avatar from "./UI/Avatar";
 import classes from "./MainNavigation.module.css";
-import profile_image from "../assets/images/profile_picture.jpg";
+import profile_image from "../assets/images/profile_picture.png";
 import useScreenSize from "./hooks/useScreenSize";
 import { useState } from "react";
 
@@ -15,7 +15,7 @@ export default function MainNavigation() {
   const screenSize = useScreenSize(true);
 
   const navigation = (
-    <nav>
+    <nav className={`${classes["left-navigation"]}`}>
       <ul className={classes.list}>
         <li>
           <NavLink

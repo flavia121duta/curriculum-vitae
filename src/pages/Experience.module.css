@@ -1,3 +1,8 @@
-.group-image {
-    width: 50%;
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.long-content {
+    margin-top: 4rem;
 }

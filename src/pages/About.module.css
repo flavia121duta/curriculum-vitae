@@ -22,6 +22,10 @@
 }
 
 .social i {
+  color: grey;
+}
+
+.social i:hover {
   color: #0f4c81;
 }
 

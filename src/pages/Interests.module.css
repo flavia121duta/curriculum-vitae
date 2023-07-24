@@ -1,11 +1,16 @@
 .gallery {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  justify-content: center;
+  align-items: center;
+  gap: 1rem;
 }
 
 .img {
-  width: 50%;
+  filter: grayscale(100%);
+  width: 100%;
+}
+
+.img:hover {
+  filter: grayscale(0);
 }
 

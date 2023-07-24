@@ -15,12 +15,11 @@
 
   width: 50vw;
   left: 25vw;
+  overflow: hidden;
 }
 
 @media (max-width: 1000px) {
   .img {
-    height: 200px;
-    width: 80vw;
-    left: 10vw;
+    width: 50vw;
   }
 }

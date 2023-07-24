@@ -1,6 +1,7 @@
 import { useState } from "react";
 import classes from "./About.module.css";
 import Resume from "../assets/resume.pdf";
+import Button from "../components/UI/Button";
 
 export default function AboutPage() {
   const [isHidden, setIsHidden] = useState(false);
@@ -24,17 +25,24 @@ export default function AboutPage() {
         <span className={`${classes["first-name"]}`}>DUŢĂ</span> FLAVIA
       </h1>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu
-        luctus est. Nunc pharetra tristique aliquet. Ut euismod felis fermentum
-        sem cursus vulputate. Nulla maximus non tellus quis dignissim. Donec at
-        augue ipsum. Aliquam sed lacinia nulla. Pellentesque sed est hendrerit,
-        blandit lectus ac, ullamcorper nisi. Suspendisse laoreet pellentesque
-        lectus, ut rhoncus lorem ultricies vitae. Maecenas laoreet neque sapien,
-        et venenatis turpis ultricies sed. Etiam ac placerat metus, ac aliquet
-        risus. Sed ultrices turpis pretium velit finibus, et laoreet magna
-        congue. Nullam sagittis nulla erat, vitae imperdiet risus finibus a.
-        Donec et hendrerit risus, et lobortis purus. Etiam ultrices odio quis
-        augue porttitor molestie.
+        Hi! My name is Flavia. I am a React lover. I've done some web apps using
+        the React framework, most of which were side projects and things that my
+        friends and I needed. I'm very passionate about web development,
+        especially front-end. One of my biggest dreams is to become a full-stack
+        developer one day.
+      </p>
+
+      <p>
+        I have just graduated from the Faculty of Mathematics and Computer
+        Science, University of Bucharest in the Mathematics department.
+        Currently, I'm doing a master's degree in Software Engineering.{" "}
+      </p>
+
+      <p>
+        In my everyday life I am a very ambitious and hard-working person. Due
+        to my flexible thinking I can deal with many unexpected situations. I
+        enjoy working in a team. I'm cooperative and assertive with those around
+        me. I am organized and efficient at work.
       </p>
 
       <ul>
@@ -46,10 +54,7 @@ export default function AboutPage() {
       </ul>
 
       <a href={Resume} download="Duta_Flavia resume">
-        <button className={`${classes["btn-download"]}`}>
-          <i className="fa-solid fa-download"></i>
-          Download my resume
-        </button>
+        <Button text="  Download my resume" i="fa-solid fa-download"></Button>
       </a>
 
       <div className={classes.social}>
@@ -74,11 +79,11 @@ export default function AboutPage() {
           className={`${classes["hide-option"]}`}
           onClick={hidePannelHandler}
         >
-          <p>Contact Me</p>
+          <h3>Contact Me</h3>
           <i className={typeOfChevron}></i>
         </div>
         {isHidden && (
-          <ul>
+          <ul className={`${classes["contacts-list"]}`}>
             <li>Phone: +40-(0)733519182</li>
             <li>
               Email-s:{" "}
